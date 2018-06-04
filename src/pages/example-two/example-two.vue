@@ -1,8 +1,14 @@
 <template>
-  <div class="two">two-bug-demo</div>
+  <article>
+    <div class="two">two-bug-demo</div>
+    <div @tap="getInfo">vuex获取数据mapGetters</div>
+  </article>
+
 </template>
 
 <script type="text/ecmascript-6">
+  import { mapGetters } from 'vuex'
+
   export default {
     data () {
       return {
@@ -12,6 +18,12 @@
     onShow () {
       console.log(this.test)
       this.test++
+    },
+    methods: {
+      ...mapGetters(['role']),
+      getInfo () {
+        console.log(this.role(), '获取数据')
+      }
     }
   }
 </script>

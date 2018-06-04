@@ -1,15 +1,15 @@
 const env = process.env.NODE_ENV
 
 const DEV = {
-  api: ''
+  api: 'dev'
 }
 
 const TEST = {
-  api: ''
+  api: 'test'
 }
 
 const PROD = {
-  api: ''
+  api: 'prod'
 }
 
 export const baseURL = env === 'production' ? PROD : env === 'test' ? TEST : DEV

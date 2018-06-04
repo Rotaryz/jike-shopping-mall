@@ -5,6 +5,6 @@ module.exports = [
   },
   {
     path: '/pages/example-two/example-two',
-    name: 'ExampleTwo2'
+    name: 'ExampleTwo222222'
   }
 ]
