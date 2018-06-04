@@ -7,9 +7,10 @@
     <div class="btn" @tap="showSuccess">show success</div>
     <div class="toast" @tap="showT">show toast</div>
     <div @tap="testReq">test 请求接口</div>
+    <div @tap="cutTest">复制hello world到剪切板</div>
+    <div @tap="getCutTest">获取剪切板的内容</div>
     <toast ref="toast"></toast>
   </article>
-
 </template>
 
 <script type="text/ecmascript-6">
@@ -58,6 +59,15 @@
           })
           .catch(err => {
             console.info('catch', err)
+          })
+      },
+      cutTest () {
+        wechat.setClipboardData('hello world cut something')
+      },
+      getCutTest () {
+        wechat.getClipboardData()
+          .then(res => {
+            console.log(res)
           })
       }
     },
