@@ -5,6 +5,8 @@
     <div class="test" @tap="toSaveRoleAction">mapActions保存数据</div>
     <div class="btn2" @tap="getRole">获取数据</div>
     <div class="btn" @tap="showSuccess">show success</div>
+    <div class="toast" @tap="showT">show toast</div>
+    <toast ref="toast"></toast>
   </article>
 
 </template>
@@ -14,6 +16,7 @@
   import * as wechat from 'common/js/wechat'
   import { mapMutations, mapActions, mapGetters } from 'vuex'
   import { baseURL } from 'api/config'
+  import Toast from '@/components/toast/toast'
 
   export default {
     onShow () {
@@ -42,7 +45,13 @@
       two () {
         let url = `/pages/example-two/example-two`
         wx.navigateTo({url})
+      },
+      showT () {
+        this.$refs.toast.show('hello mpvue')
       }
+    },
+    components: {
+      Toast
     }
   }
 </script>
