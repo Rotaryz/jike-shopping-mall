@@ -9,7 +9,8 @@ const TEST = {
 }
 
 const PROD = {
-  api: 'prod'
+  // api: 'prod'
+  api: 'https://backend-api.jkweixin.com/v1'
 }
 
 export const baseURL = env === 'production' ? PROD : env === 'test' ? TEST : DEV

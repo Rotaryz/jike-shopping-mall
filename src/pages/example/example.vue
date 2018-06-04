@@ -6,6 +6,7 @@
     <div class="btn2" @tap="getRole">获取数据</div>
     <div class="btn" @tap="showSuccess">show success</div>
     <div class="toast" @tap="showT">show toast</div>
+    <div @tap="testReq">test 请求接口</div>
     <toast ref="toast"></toast>
   </article>
 
@@ -17,6 +18,7 @@
   import { mapMutations, mapActions, mapGetters } from 'vuex'
   import { baseURL } from 'api/config'
   import Toast from '@/components/toast/toast'
+  import api from 'api'
 
   export default {
     onShow () {
@@ -48,6 +50,15 @@
       },
       showT () {
         this.$refs.toast.show('hello mpvue')
+      },
+      testReq () {
+        api.exaTest()
+          .then(json => {
+            console.log(json)
+          })
+          .catch(err => {
+            console.info('catch', err)
+          })
       }
     },
     components: {
