@@ -81,7 +81,13 @@ const app = new Vue({
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run dev 开发环境
+
+# serve with hot reload at localhost:8080
+npm run test 测试环境
+
+# serve with hot reload at localhost:8080
+npm run prod 线上环境
 
 # build for production:test with minification
 npm run build:test
