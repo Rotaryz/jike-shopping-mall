@@ -13,8 +13,12 @@
   import wx from 'wx'
   import * as wechat from 'common/js/wechat'
   import { mapMutations, mapActions, mapGetters } from 'vuex'
+  import { baseURL } from 'api/config'
 
   export default {
+    onShow () {
+      console.log(baseURL.api)
+    },
     methods: {
       ...mapGetters(['role']),
       ...mapActions(['saveRole']),
@@ -32,7 +36,7 @@
         this.roleSync('union')
         console.log('mapMutations保存union变量,同步')
       },
-      showSuccess() {
+      showSuccess () {
         wechat.tipSuccess('操作成功')
       },
       two () {
