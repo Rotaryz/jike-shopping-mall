@@ -78,6 +78,8 @@
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
+  @import "~common/stylus/variable"
+
   .hello
     color: red
     font-size: 28px
