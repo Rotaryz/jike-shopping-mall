@@ -1,7 +1,7 @@
 <template>
   <article>
     <div class="two">two-bug-demo</div>
-    <div @tap="getInfo">vuex获取数据mapGetters</div>
+    <div @click="getInfo">vuex获取数据mapGetters</div>
   </article>
 
 </template>

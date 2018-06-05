@@ -1,14 +1,14 @@
 <template>
   <article>
-    <div class="hello" @tap="two">页面跳转two</div>
-    <div class="btn" @tap="toSave2">mapActions保存数据</div>
-    <div class="test" @tap="toSaveRoleAction">mapActions保存数据</div>
-    <div class="btn2" @tap="getRole">获取数据</div>
-    <div class="btn" @tap="showSuccess">show success</div>
-    <div class="toast" @tap="showT">show toast</div>
-    <div @tap="testReq">test 请求接口</div>
-    <div @tap="cutTest">复制hello world到剪切板</div>
-    <div @tap="getCutTest">获取剪切板的内容</div>
+    <div class="hello" @click="two">页面跳转two</div>
+    <div class="btn" @click="toSave2">mapActions保存数据</div>
+    <div class="test" @click="toSaveRoleAction">mapActions保存数据</div>
+    <div class="btn2" @click="getRole">获取数据</div>
+    <div class="btn" @click="showSuccess">show success</div>
+    <div class="toast" @click="showT">show toast</div>
+    <div @click="testReq">test 请求接口</div>
+    <div @click="cutTest">复制hello world到剪切板</div>
+    <div @click="getCutTest">获取剪切板的内容</div>
     <toast ref="toast"></toast>
   </article>
 </template>
