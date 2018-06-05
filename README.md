@@ -1,11 +1,6 @@
 # jike-shopping-mall
 
-> 积分商城
-
-
-# ipc-shopping
-
-> 异业联盟
+> 集客-积分商城
 
 
 ## 相关依赖
@@ -90,10 +85,10 @@ npm run test 测试环境
 npm run prod 线上环境
 
 # build for production:test with minification
-npm run build:test
+npm run build:test 打包测试环境
 
 # build for production:prod with minification
-npm run build:prod
+npm run build:prod 打包正式环境
 
 
 ```
