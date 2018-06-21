@@ -22,6 +22,38 @@ export default {
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: '#868686',
+      selectedColor: '#292929',
+      backgroundColor: '#fff',
+      borderStyle: 'black',
+      list: [
+        {
+          pagePath: 'pages/home/home',
+          text: '首页',
+          iconPath: '/static/img/icon-tab_home02@2x.png',
+          selectedIconPath: '/static/img/icon-tab_home01@2x.png'
+        },
+        {
+          pagePath: 'pages/scene-exchange/scene-exchange',
+          text: '现场兑换',
+          iconPath: '/static/img/icon-tab_locale02@2x.png',
+          selectedIconPath: '/static/img/icon-tab_locale01@2x.png'
+        },
+        {
+          pagePath: 'pages/online-exchange/online-exchange',
+          text: '商城兑换',
+          iconPath: '/static/img/icon-tab_mall02@2x.png',
+          selectedIconPath: '/static/img/icon-tab_mall01@2x.png'
+        },
+        {
+          pagePath: 'pages/mine/mine',
+          text: '我的',
+          iconPath: '/static/img/icon-tab_mine02@2x.png',
+          selectedIconPath: '/static/img/icon-tab_mine01@2x.png'
+        }
+      ]
     }
   }
 }

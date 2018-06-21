@@ -1,10 +1,18 @@
 module.exports = [
   {
-    path: '/pages/example/example',
-    name: 'Example'
+    path: '/pages/home/home',
+    name: 'Home'
   },
   {
-    path: '/pages/example-two/example-two',
-    name: 'ExampleTwo222222'
+    path: '/pages/scene-exchange/scene-exchange',
+    name: 'SceneExchange'
+  },
+  {
+    path: '/pages/online-exchange/online-exchange',
+    name: 'OnlineExchange'
+  },
+  {
+    path: '/pages/mine/mine',
+    name: 'Mine'
   }
 ]

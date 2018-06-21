@@ -16,7 +16,7 @@
       }
     },
     onShow () {
-      console.log(this.test)
+      console.log(this)
       this.test++
     },
     methods: {

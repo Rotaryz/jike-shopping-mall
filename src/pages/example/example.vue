@@ -24,6 +24,8 @@
   export default {
     onShow () {
       console.log(baseURL.api)
+      console.log(this.$root, '------------')
+      console.log(wx, '-----------------')
     },
     methods: {
       ...mapGetters(['role']),
